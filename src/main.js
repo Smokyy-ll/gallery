@@ -1,10 +1,13 @@
-import Controller from "./controller.js";
+import Controller from "./mvc/controller.js";
+import Model from "./mvc/model.js";
+import View from "./mvc/view.js";
+
 
 class Init {
     constructor() {
-        this.app = new Controller();
-        console.log(this.app);
-        
+        this.model = new Model();
+        this.view = new View();
+        this.app = new Controller(this.model, this.view);
     }
 
 }
