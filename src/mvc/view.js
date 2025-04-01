@@ -1,9 +1,10 @@
-import Creator from "../utilities/creator";
+import Header from "../components/header.js";
+import Creator from "../utilities/creator.js";
 
 
 const testParams = {
     tagName: 'div',
-    classList: ['first', 'second'],
+    classList: ['first', 'second'], 
     text: 'text',
     attr: {
         id: 'testId',
@@ -14,8 +15,7 @@ const testParams = {
 export default class View {
     APP_CONTAINER = document.body
     constructor() {
-        // Header должен создавать не creator здесь, а класс header в другом файле
-        this.header = new Creator(testParams)
+        this.header = new Header()
         this.display()
     }
 
