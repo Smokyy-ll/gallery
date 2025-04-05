@@ -8,6 +8,9 @@ const formParams = {
 const inputParams = {
     tagName: 'input',
     classList: ['first', 'second'], 
+    attr: {
+        'name': 'query',
+    }
 }
 
 const buttonParams = {

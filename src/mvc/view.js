@@ -1,17 +1,6 @@
 import Header from "../components/header.js";
 import Creator from "../utilities/creator.js";
 
-
-const testParams = {
-    tagName: 'div',
-    classList: ['first', 'second'], 
-    text: 'text',
-    attr: {
-        id: 'testId',
-        'data-test': 'testData'
-    } 
-}
-
 export default class View {
     APP_CONTAINER = document.body
     constructor() {
