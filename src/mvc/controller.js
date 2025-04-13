@@ -14,6 +14,7 @@ export default class Controller {
             const result = await this.model.getData(query);
             console.log(result);
             
+            await this.view.list.createImages(result);
         })
     }
 }
