@@ -12,8 +12,7 @@ export default class Controller {
             event.preventDefault()
             const query = new FormData(event.target).get('query');
             const result = await this.model.getData(query);
-            console.log(result);
-            
+
             await this.view.list.createImages(result);
         })
     }

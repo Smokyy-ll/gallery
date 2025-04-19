@@ -33,7 +33,7 @@ export default class Creator{
     };
 
     setStyle(){
-        if (this.params.classList.length > 0) {
+        if (this.params.classList && this.params.classList.length > 0) {
             this.element.classList.add(...this.params.classList)
         }
     };
