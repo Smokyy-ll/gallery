@@ -18,14 +18,17 @@ class ListButtons extends Creator {
         this.addChildren()
     }
     addChildren(){
+        // 1. Нужно перебрать список параметров кнопок
+        // 2. Для каждой кнопки создать li
+        // 3. Выполнить вставку li>button в список
         const listItem = new Creator(listItemParams)
-        console.log(listItem.getElement());
         
         const button = new Creator(buttonParams)
-        console.log(button.element);
         
         listItem.element.append(button.getElement())
-        this.element.append(listItem)
+
+        // тут исправил
+        this.element.append(listItem.getElement())
     }
 
 }
